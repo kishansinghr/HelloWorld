@@ -6,11 +6,8 @@
 
 var myapp = angular.module('myApp',[]);
         
-<<<<<<< HEAD
-myapp.controller('MainController',['AlertService','$scope',function(alertService,$scope){
-=======
 myapp.controller('MainController',['logService','AlertService','$scope',function(logService,alertService,$scope){
->>>>>>> log-branch
+
     $scope.message = "hello world";     
     $scope.onclick = function(){
         console.log("clicked")
@@ -18,10 +15,7 @@ myapp.controller('MainController',['logService','AlertService','$scope',function
     $scope.showAlert = function(alrt){
         alertService.showAlert(alrt);
     };
-<<<<<<< HEAD
-=======
     $scope.logMessage = function(msg){
         logService.log(msg);
     }
->>>>>>> log-branch
 }]);
