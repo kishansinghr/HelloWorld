@@ -6,9 +6,12 @@
 
 var myapp = angular.module('myApp',[]);
         
-myapp.controller('MainController',['$scope',function($scope){
+myapp.controller('MainController',['AlertService','$scope',function(alertService,$scope){
     $scope.message = "hello world";     
     $scope.onclick = function(){
         console.log("clicked")
+    };
+    $scope.showAlert = function(alrt){
+        alertService.showAlert(alrt);
     };
 }]);

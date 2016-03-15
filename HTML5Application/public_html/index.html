@@ -12,9 +12,15 @@ and open the template in the editor.
         
         <script src="scripts/angular.js"></script>
         <script src="scripts/app.js"></script>
+        <script src="scripts/AlertService.js"></script>
     </head>
     <body ng-controller="MainController">
         <div>TODO write content</div>
         <span>{{message}}<span>
+
+                <br>
+                <br>
+                <input type="text" ng-model="alrt"/>
+                <button ng-click="showAlert(alrt)">alert</button>
     </body>
 </html>
