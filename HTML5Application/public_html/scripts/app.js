@@ -6,12 +6,9 @@
 
 var myapp = angular.module('myApp',[]);
         
-myapp.controller('MainController',['logService','$scope',function(logService,$scope){
+myapp.controller('MainController',['$scope',function($scope){
     $scope.message = "hello world";     
     $scope.onclick = function(){
         console.log("clicked")
     };
-    $scope.logMessage = function(msg){
-        logService.log(msg);
-    }
 }]);
